@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-color: #24252a;
+  box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.nav-login-botao button{
+  border: none;
+  background-color: #0187a7;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-login-botao button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-mobile-icon {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-login-botao {
+    display: none;
+  }
+
+  .nav-mobile-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-mobile-icon p {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .nav-mobile-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .menu-mobile .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .menu-mobile .mobile-login-botao {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .menu-mobile .mobile-login-botao button {
+    width: 100%;
+  }
+
+  .mobile-login-botao button {
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .mobile-login-botao button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .open {
+    display: block;
+  }
+}
